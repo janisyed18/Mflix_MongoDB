@@ -1,0 +1,127 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.search-section {
+  position: relative;
+}
+
+.search-input {
+  border: 1px solid black;
+  padding: 8px 16px;
+  border-radius: 8px;
+  padding-left: 34px;
+}
+
+.product-breadcumb {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.product-container {
+  display: flex;
+}
+
+.product-img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.search-icon-svg {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.popular-product-img {
+  width: 160px;
+  height: 238px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.product-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-description {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.explore-neighborhoods-container {
+  margin: 2rem 0;
+}
+
+.explore-btn {
+  width: 180px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.explore-grid-container {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.popular-card {
+  cursor: pointer;
+  margin-top: 12px;
+  transition: all 0.3s ease;
+}
+
+.popular-card:hover {
+	transform: scale(1.1);
+	
+}
+.popular-products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 18px;
+}
